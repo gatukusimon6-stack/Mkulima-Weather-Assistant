@@ -1,64 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background-image: url(Images/Farming.jpg);
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-image: fill url(Images/Farming.jpg) 30 round;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: darken;
+  color: white;
+}
+
+/* Navigation */
+
+nav{
   width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+nav a:hover{
+  background: rgba(255, 255, 255, 0.703);
+}
+
+/* Main Content */
+
+main{
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
+  padding: 20px;
 }
 
-.container{
-  background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(5px);
+/* Blurred Container */
+
+section{
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
+  background: rgba(255,255,255,0.01);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
+
+/* Header */
+
+header h1{
+  color: #08bb11;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+/* Weather Info */
+
 .weather-info{
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #030303;
-}
-#MyTitle{
-  margin-bottom: 20px;
-  color: #08bb11;
 }
 
-input[type="text"]{
+.weather-info p{
+  margin: 10px 0;
+}
+
+/* Inputs */
+
+input[type="text"],
+input[type="email"],
+textarea{
   width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 12px;
   border: none;
   border-radius: 5px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
+
+/* Buttons */
+
 button{
-  padding: 10px 20px;
-  background-color: #059062;
-  color: rgb(15, 13, 13);
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
+  background-color: #059062;
+  color: white;
   font-size: 16px;
   cursor: pointer;
 }
-.advice{
-  margin-top: 20px;
-  font-size: 18px;
-  color: #d61616;
-}
-#adviceText{
-  font-weight: bold;
-  color: #161817;
-}
+
 button:hover{
   background-color: #047a4c;
+}
+
+/* Advice */
+
+.advice{
+  margin-top: 20px;
+  color: #ffcccb;
+}
+
+#adviceText{
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media(max-width: 600px){
+
+  nav{
+    justify-content: center;
+    padding: 20px;
+  }
+
+  nav a{
+    margin: 5px;
+  }
+
+  section{
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    width: 100%;
+  }
+
 }
