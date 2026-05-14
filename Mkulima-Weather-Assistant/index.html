@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mkulima Weather Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="MyTitle">Mkulima Weather Assistant</h1>
+
+        <input type="text" id="locationInput" placeholder="Enter your location">
+        <button id="getWeatherBtn">Get Weather</button><br><br>
+
+        <div class="weather-result">
+          <h1 id="locationName">Location</h1>
+
+            <div class="weather-info">
+
+                <p> Temperature:<span id="temperature">--</span>°C</p>
+
+                <p> Humidity:<span id="humidity">--</span>%</p>
+
+                <p> Weather:<span id="condition">--</span></p>
+            </div>
+
+             <div class="advice">
+                <h3>Farming Advice:</h3>
+                <p id="adviceText">--</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
