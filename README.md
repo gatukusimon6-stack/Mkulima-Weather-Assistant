@@ -121,5 +121,9 @@ Future versions may include:
 
 Created by Simon Gatuku.
 
+## License
+This Project is only for Education Purposes only.
+
+---
 ## Live demo 
 (http://127.0.0.1:5500/Mkulima-Weather-Assistant/index.html)
