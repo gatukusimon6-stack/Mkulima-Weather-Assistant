@@ -1,5 +1,7 @@
 # Mkulima Weather Assistant
 
+---
+
 ## Description
 
 Mkulima Weather Assistant is a simple weather web application
